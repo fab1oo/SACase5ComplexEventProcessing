@@ -5,7 +5,7 @@
 	<groupId>ch.fhnw</groupId>
 	<artifactId>SACase5ComplexEventProcessing</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>kafka_sample</name>
+	<name>SACase5ComplexEventProcessing</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
