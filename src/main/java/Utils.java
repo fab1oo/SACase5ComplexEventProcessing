@@ -35,15 +35,9 @@ public class Utils {
 			return res;
 		}
 		return null;
-
 	}
 
 	public static int requestDelay(String key, GpsPos pos) {
-
-		// Note: this is a very basic way of connecting to a REST service to keep it
-		// simple. In reality it would be strongly advisable to use a client library
-		// like Jersey or similar. -- also this method has quite bad error handling...
-
 		try {
 
 			// build a URL with all our parameters
@@ -56,7 +50,6 @@ public class Utils {
 			HttpURLConnection con = (HttpURLConnection) url.openConnection();
 			con.setRequestMethod("GET");
 			con.connect();
-
 			// handle the result --> which is the delay in minutes
 			int status = con.getResponseCode();
 			BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
